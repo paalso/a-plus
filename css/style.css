@@ -1,7 +1,7 @@
 :root {
     --main-color: #404040;
     --button-color: #00b770;
-    --button-pressed-color: #00a666;
+    --button-hover-color: #00a666;
     --button-active-text-color: #4dc194;
     --orange-background: #ef9f13;
     --lightgrey-background: #efefef;
@@ -36,8 +36,15 @@ h2, h3, .title {
     color: #000;
 }
 
+h2, .promo-title {
+    margin-bottom: 70px;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
 h3 {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 18px;
     height: 24px;
 }
@@ -64,7 +71,7 @@ h3 {
 }
 
 .btn:hover {
-    background-color: var(--button-pressed-color);
+    background-color: var(--button-hover-color);
 }
 
 .btn:active {
@@ -82,8 +89,8 @@ h3 {
     padding-top: 65px;
     padding-bottom: 150px;
     background-color: var(--orange-background);
-    background: url("../img/bg-header-gradient.jpg") no-repeat center;
-    background-size: 100%;
+    background: url("../img/bg-header-gradient.jpg") no-repeat center 100%;
+    background-size: cover;
 }
 
 .header-top {
@@ -142,10 +149,7 @@ h3 {
 }
 
 .promo-title {
-    margin-bottom: 35px;
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .promo p {
@@ -164,9 +168,9 @@ h3 {
 
 .features-item {
     position: relative;
+    float: left;
     width: 300px;
     margin-right: 40px;
-    float: left;
 }
 
 .features-item:nth-child(3) {
@@ -193,4 +197,79 @@ h3 {
 
 .features-img-job {
     background-position: -220px;
+}
+
+.feedback {
+    padding-top: 90px;
+    padding-bottom: 70px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.feedback-item {
+    overflow: hidden;
+}
+
+.feedback h2 {
+    margin-bottom: 75px;
+}
+
+.feedback-author {
+    position: relative;
+    float: left;
+    width: 300px;
+    padding-left: 170px;
+}
+
+.feedback-content {
+    float: right;
+    width: 640px;
+    padding-right: 35px;
+}
+
+.feedback-author h3 {
+    height: 100%;
+}
+
+.feedback-author img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.contacts {
+    background-color: var(--lightgrey-background);
+}
+
+.feedback .container {
+    position: relative;
+}
+
+.show-all {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 175px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    color: #000;
+}
+
+.show-all:hover {
+    color: var(--button-hover-color);
+}
+
+.show-all:active {
+    color: var(--button-hover-color);
+    opacity: 0.3;
+}
+
+.show-all img {
+    float: right;
+    margin-top: 9px;
 }
