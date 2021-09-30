@@ -54,12 +54,6 @@ h3 {
     line-height: 24px;
 }
 
-.clearfix {
-    display: table;
-    content: "";
-    clear: both;
-}
-
 .btn {
     display: block;
     padding-top: 20px;
@@ -101,6 +95,7 @@ h3 {
 
 .header-top {
     margin-bottom: 140px;
+    overflow: hidden;
 }
 
 .main-logo {
@@ -172,6 +167,12 @@ h3 {
     padding-top: 90px;
     padding-bottom: 70px;
     background-color: var(--lightgrey-background);
+}
+
+.features::after {
+    display: table;
+    content: "";
+    clear: both;
 }
 
 .features-item {
@@ -247,6 +248,7 @@ h3 {
 
 .contacts {
     background-color: var(--lightgrey-background);
+    overflow: hidden;
 }
 
 .feedback .container {
@@ -334,6 +336,12 @@ input:focus, textarea:focus {
     font-size: 16px;
 }
 
+.contacts-form .radio-field label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
 .contacts-form .form-field textarea {
     resize: none;
 }
@@ -366,6 +374,7 @@ input:focus, textarea:focus {
     padding-top: 90px;
     padding-bottom: 65px;
     background-color: var(--dark-background);
+    overflow: hidden;
 }
 
 .main-footer * {
@@ -439,7 +448,6 @@ input:focus, textarea:focus {
     width: 40px;
     height: 40px;
     margin-right: 20px;
-    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -448,10 +456,22 @@ input:focus, textarea:focus {
     background-image: url("../img/social-vk.png");
 }
 
+.social .vk-logo:hover, .social .vk-logo:active {
+    background-image: url("../img/social-vk-active.png");
+}
+
 .social .fb-logo {
     background-image: url("../img/social-fb.png");
 }
 
+.social .fb-logo:hover, .social .fb-logo:active {
+    background-image: url("../img/social-fb-active.png");
+}
+
 .social .twi-logo {
     background-image: url("../img/social-twi.png");
+}
+
+.social .twi-logo:hover, .social .twi-logo:active {
+    background-image: url("../img/social-twi-active.png");
 }
