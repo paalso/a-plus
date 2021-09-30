@@ -1,3 +1,5 @@
+/* --- General --- */
+
 :root {
     --main-color: #404040;
     --button-color: #00b770;
@@ -5,8 +7,11 @@
     --button-active-text-color: #4dc194;
     --orange-background: #ef9f13;
     --lightgrey-background: #efefef;
+    --dark-background: #1f2022;
     --lightgrey-border: #b2b2b2;
     --lightgrey-hover-border: #7f7f7f;
+    --footer-menu-links: #ffcc00;
+    --footer-menu-links-active: #635418;
 }
 
 * {
@@ -84,6 +89,8 @@ h3 {
     padding: 0 10px;
 }
 
+/* --- Main header --- */
+
 .main-header {
     padding-top: 65px;
     padding-bottom: 150px;
@@ -159,6 +166,8 @@ h3 {
     width: 300px;
 }
 
+/* --- Features --- */
+
 .features {
     padding-top: 90px;
     padding-bottom: 70px;
@@ -198,6 +207,8 @@ h3 {
     background-position: -220px;
 }
 
+/* --- Feedback --- */
+
 .feedback {
     padding-top: 90px;
     padding-bottom: 70px;
@@ -231,6 +242,8 @@ h3 {
     height: 130px;
     border-radius: 50%;
 }
+
+/* --- Contacts --- */
 
 .contacts {
     background-color: var(--lightgrey-background);
@@ -270,8 +283,6 @@ h3 {
     padding-bottom: 80px;
     background-color: var(--lightgrey-background);
 }
-
-/* ------------------------------------- */
 
 .contacts-form {
     float: left;
@@ -331,8 +342,6 @@ input:focus, textarea:focus {
     width: 100%;
 }
 
-/* ------------------------------------------------ */
-
 .contacts-info {
     float: right;
     width: 300px;
@@ -349,4 +358,100 @@ input:focus, textarea:focus {
 
 .contacts-info .attention span {
     font-weight: 700;
+}
+
+/* --- Main footer --- */
+
+.main-footer {
+    padding-top: 90px;
+    padding-bottom: 65px;
+    background-color: var(--dark-background);
+}
+
+.main-footer * {
+    color: #fff;
+}
+
+.footer-top {
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.footer-address, .copyright {
+    float: left;
+    width: 300px;
+    margin-right: 40px;
+}
+
+.footer-menu {
+    float: left;
+    margin-right: 40px;
+}
+
+.footer-address {
+    width: 300px;
+}
+
+.footer-logo {
+    width: 180px;
+    margin-bottom: 80px;
+}
+
+.footer-menu {
+    margin-top: 30px;
+}
+
+.footer-menu:last-of-type {
+    float: right;
+}
+
+.footer-menu li {
+    margin-bottom: 25px;
+}
+
+.footer-menu li:first-child {
+    margin-bottom: 35px;
+}
+
+.footer-menu a {
+    color: var(--footer-menu-links);
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.footer-menu a:active {
+    color: var(--footer-menu-links-active);
+}
+
+.discounts {
+    float: left;
+}
+
+.social {
+    float: right;
+    font-size: 0;
+}
+
+.social-logo {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.social .vk-logo {
+    background-image: url("../img/social-vk.png");
+}
+
+.social .fb-logo {
+    background-image: url("../img/social-fb.png");
+}
+
+.social .twi-logo {
+    background-image: url("../img/social-twi.png");
 }
