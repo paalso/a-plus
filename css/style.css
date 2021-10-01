@@ -35,13 +35,13 @@ ul {
     list-style-type: none;
 }
 
-h2, h3, .title {
+h1, h2, h3, .title {
     text-transform: uppercase;
     color: #000;
     font-weight: 700;
 }
 
-h2, .promo-title {
+h2, .promo-title, .page-title {
     margin-bottom: 70px;
     font-size: 40px;
     line-height: 48px;
@@ -87,15 +87,28 @@ h3 {
 
 .main-header {
     padding-top: 65px;
-    padding-bottom: 150px;
+    padding-bottom: 70px;
     background-color: var(--orange-background);
     background: url("../img/bg-header-gradient.jpg") no-repeat center 100%;
+    background-size: cover;
+}
+
+.main-header-inner {
+    background: url("../img/bg-header-inner.jpg") no-repeat center 100%;
     background-size: cover;
 }
 
 .header-top {
     margin-bottom: 140px;
     overflow: hidden;
+}
+
+.main-header-inner .header-top {
+    margin-bottom: 95px;
+}
+
+.main-header-inner .page-title {
+    margin-bottom: 30px;
 }
 
 .main-logo {
@@ -161,6 +174,44 @@ h3 {
     width: 300px;
 }
 
+.main-header-inner .breadcrumbs {
+    font-size: 0;
+}
+
+.main-header-inner .breadcrumbs li {
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.main-header-inner .breadcrumbs li, .main-header-inner .breadcrumbs a {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.main-header-inner .breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.main-header-inner .breadcrumbs a:active {
+    text-decoration: underline;
+    opacity: 0.3;
+}
+
+.main-header-inner .breadcrumbs li::after {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 50px;
+    background: url("../img/ico-nav-arrow.png") no-repeat center center;
+    background-size: 40%;
+}
+
+.main-header-inner .breadcrumbs li:last-of-type::after {
+    content: none;
+}
+
 /* --- Features --- */
 
 .features {
@@ -218,8 +269,15 @@ h3 {
     line-height: 24px;
 }
 
-.feedback-item {
-    overflow: hidden;
+.feedback-item * {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.feedback-item::after {
+    display: table;
+    content: "";
+    clear: both;
 }
 
 .feedback-author {
@@ -230,9 +288,30 @@ h3 {
 }
 
 .feedback-content {
+    position: relative;
     float: right;
     width: 640px;
     padding-right: 35px;
+}
+
+.feedback-content::before, .feedback-content::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+
+.feedback-content::before {
+    left: -37px;
+    top: -18px;
+    background: url("../img/quotes-open.png") no-repeat center center;
+}
+
+.feedback-content::after {
+    right: -30px;
+    bottom: -15px;
+    background: url("../img/quotes-close.png") no-repeat center center;
 }
 
 .feedback-author img {
