@@ -18,13 +18,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: 18px/24px 'Arial', sans-serif;
-    color: var(--main-color);
-    text-decoration: none;
+    font: inherit;
 }
 
 body {
     min-width: 1000px;
+    font: 18px/24px 'Arial', sans-serif;
+    color: var(--main-color);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    line-height: inherit;
 }
 
 img {
@@ -87,28 +94,15 @@ h3 {
 
 .main-header {
     padding-top: 65px;
-    padding-bottom: 70px;
+    padding-bottom: 150px;
     background-color: var(--orange-background);
     background: url("../img/bg-header-gradient.jpg") no-repeat center 100%;
-    background-size: cover;
-}
-
-.main-header-inner {
-    background: url("../img/bg-header-inner.jpg") no-repeat center 100%;
     background-size: cover;
 }
 
 .header-top {
     margin-bottom: 140px;
     overflow: hidden;
-}
-
-.main-header-inner .header-top {
-    margin-bottom: 95px;
-}
-
-.main-header-inner .page-title {
-    margin-bottom: 30px;
 }
 
 .main-logo {
@@ -174,6 +168,22 @@ h3 {
     width: 300px;
 }
 
+/* - Main Header Inner  */
+
+.main-header-inner {
+    padding-bottom: 70px;
+    background: url("../img/bg-header-inner.jpg") no-repeat center 100%;
+    background-size: cover;
+}
+
+.main-header-inner .header-top {
+    margin-bottom: 95px;
+}
+
+.main-header-inner .page-title {
+    margin-bottom: 30px;
+}
+
 .main-header-inner .breadcrumbs {
     font-size: 0;
 }
@@ -201,6 +211,8 @@ h3 {
 
 .main-header-inner .breadcrumbs li::after {
     position: absolute;
+    top: 0;
+    right: -50px;
     content: "";
     height: 12px;
     width: 50px;
