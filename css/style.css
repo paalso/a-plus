@@ -9,9 +9,11 @@
     --lightgrey-background: #efefef;
     --dark-background: #1f2022;
     --lightgrey-border: #b2b2b2;
+    --lightgrey-table-border: #d3d2d2;
     --lightgrey-hover-border: #7f7f7f;
     --footer-menu-links: #ffcc00;
     --footer-menu-links-active: #635418;
+    --link-color: #3366cc;
 }
 
 * {
@@ -222,6 +224,92 @@ h3 {
 
 .main-header-inner .breadcrumbs li:last-of-type::after {
     content: none;
+}
+
+/* --- Program Info (Inner) --- */
+
+.program-info {
+    padding-top: 90px;
+    padding-bottom: 75px;
+    font-size: 16px;
+}
+
+.program-info h2, h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+.program-info p {
+    margin-bottom: 1.5em;
+}
+
+.program-info ul {
+    margin-bottom: 3em;
+    padding-left: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.program-info li {
+    position: relative;
+    margin-bottom: 1.33em;
+}
+
+.program-info li::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -35px;
+    width: 25px;
+    height: 2px;
+    background-color: var(--button-color);
+}
+
+.program-info a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.program-info hr {
+    margin: 60px 0;
+}
+
+.program-info blockquote {
+    margin-bottom: 1.5em;
+    padding-left: 35px;
+    font-style: italic;
+    border-left: var(--button-color) 2px solid;
+}
+
+.program-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.program-info table,
+.program-info tr,
+.program-info td {
+    border: 1px solid var(--lightgrey-table-border);
+}
+
+.program-info td {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.program-info td {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.program-info table thead {
+    background-color: var(--lightgrey-background);0
 }
 
 /* --- Features --- */
