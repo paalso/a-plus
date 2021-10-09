@@ -229,13 +229,16 @@ h3 {
 /* --- Program Info (Inner) --- */
 
 .program-info {
-    padding-top: 90px;
+    padding-top: 85px;
     padding-bottom: 75px;
     font-size: 16px;
 }
 
+.program-info-item {
+    position: relative;
+}
+
 .program-info h2, h3 {
-    margin-top: 1em;
     margin-bottom: 1em;
     font-size: 24px;
     line-height: 48px;
@@ -271,6 +274,7 @@ h3 {
 }
 
 .program-info a {
+    display: inline;
     color: var(--link-color);
     text-decoration: underline;
 }
@@ -289,19 +293,20 @@ h3 {
 .program-info table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 18px;
+    line-height: 24px;
 }
 
-.program-info table,
-.program-info tr,
-.program-info td {
+.program-info table, .program-info tr, .program-info td, .program-info th {
     border: 1px solid var(--lightgrey-table-border);
 }
 
-.program-info td {
+.program-info td, .program-info th {
     padding-top: 10px;
     padding-left: 15px;
     padding-bottom: 10px;
 }
+
 .program-info td {
     padding-top: 10px;
     padding-left: 15px;
@@ -309,7 +314,10 @@ h3 {
 }
 
 .program-info table thead {
-    background-color: var(--lightgrey-background);0
+    background-color: var(--lightgrey-background);
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 700;
 }
 
 /* --- Features --- */
